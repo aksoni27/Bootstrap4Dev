@@ -16,10 +16,11 @@
 	padding: 20px 0px 20px 0px;
 }
 .jumbotron{
-	padding: 70px 30px 70px 30px;
+	padding: 50px 30px 30px 30px;
 	margin: 0px auto;
-	background:#9575CD;
+	background:#4304af;
 	color: floralwhite;
+	height: 220px;
 }
 
 .address{
@@ -35,7 +36,7 @@ body{
 
 }
 .navbar-dark{
-	background-color: #512DA8;
+	background-color: #250474;
 }
 /* .card-header{
 	background-color: #212529;
@@ -51,21 +52,42 @@ body{
 	color: #ddd;
 }
 .carousel{
-	background: #512DA8;
+	background: #250474;
+	
 
 }
 .carousel-item{
-	height: 300px;
+	height: 250px;
 
 }
 .carousel-item img{
 	position: absolute;
 	top: 0;
 	left: 0;
-	min-height: 300px;
+	min-height: 250px;
 }
 #carouselButton{
 	right: 0px;
 	position: absolute;
 	bottom: 0px;
+}
+#loginhead{
+	background-color: #340486;
+	color: #ddd;
+}
+#loginbody{
+	background: #c8bddb;
+font-size: 15px;
+font-weight: bold;
+}
+#reservehead{
+	background-color: #340486;
+	color: #ddd;
+}
+#reservebody{
+	background: #c8bddb;
+color: black;
+text-emphasis-color: black;
+font-size: 15px;
+font-weight: bold;
 }

@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/styled.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
@@ -30,7 +30,7 @@
                         <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginbtn" >
                         <span class="fa fa-sign-in"></span>Login
                     </a>
                 </span>
@@ -40,18 +40,18 @@
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
-                <div class="modal-header">
+                <div id="loginhead" class="modal-header">
                     <h4 class="modal-title">Login</h4>
-                    <button type="button" class="close" data-dismis9po]s="modal">
-                        &times;
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span id="loginhead">&times;</span>
                     </button>
                 </div>
-                    <div class="modal-body">
+                    <div id="loginbody" class="modal-body">
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-sm-4">
                                     <label class="sr-only" for="exampleInputEmail3" >Email Address</label>
-                                    <input type="email" id ="exampleInputEmail3" class="form-control form-control-sm- mr-1" placeholder=" Enter Email" >
+                                    <input type="email" id ="exampleInputEmail3" class="form-control form-control-sm- mr-1" placeholder=" Enter email" >
                                 </div>
                                 <div class="form-group col-sm-4">
                                     <label class="sr-only" for="exampleInputPassword3">Password</label>
@@ -77,13 +77,13 @@
     <div id="reservetableModal" class="modal fade" role="dialog">
         <div class=" modal-dialog modal-lg" role="content">
             <div class="modal-content">
-                <div class="modal-header">
+                <div id="reservehead" class="modal-header">
                     <h4 class="modal-title">Reserve a Table</h4>
                     <button type="button" class="close" data-dismiss="modal">
-                        <span>&times;</span>
+                        <span id="reservehead">&times;</span>
                     </button>
                 </div>
-                    <div class="modal-body">
+                    <div id ="reservebody" class="modal-body">
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-12 col-sm-2">
@@ -138,9 +138,9 @@
         </div>
     </div>
     <header class="jumbotron">
-        <div class="container">
+        <div class="container" id="jumbo1">
             <div class="row row-header" >
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-sm-6" >
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
@@ -150,8 +150,7 @@
                             <img src="img/logo.png" class="img-fluid">
                         </div>
                         <div class="col-12 col-sm-6 align-self-center">
-                            <a id="reservetable" role="button" data-toggle="modal" data-html="true" data-target="#reservetableModal"
-                                data-placement="bottom"  class="btn btn-block nav-link btn-warning" ><strong>Reserve Table</strong></a>
+                            <a role="button" id="reservetable" class="btn btn-block nav-link btn-primary" ><strong>Reserve Table</strong></a>
                         </div>
                     </div>
                    
@@ -310,25 +309,8 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel({interval:2000});
-            $("#carouselButton").click(function(){
-                if($("#carouselButton").children('span').hasClass('fa-pause')){
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children('span').removeClass('fa-pause');
-                    $('#carouselButton').children('span').addClass('fa-play');
-
-                }else{
-                    $('#mycarousel').carousel('cycle');
-                    $('#carouselButton').children('span').removeClass('fa-play');
-                    $('#carouselButton').children('span').addClass('fa-pause');
-                }
-                
-            });
-           
-        })
-    </script>
+    <script src="js/script1.js"></script>
+    <script src="js/script2.js"></script>
 
 </body>
 
